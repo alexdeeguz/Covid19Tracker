@@ -7,7 +7,7 @@ import cx from 'classnames'
 const Cards = ( {data: {confirmed, recovered, deaths, lastUpdate} }) => {
     if (!confirmed) return 'Loading...'
     return (
-        <div className="styles.container">
+        <div className={styles.container}>
             <Grid container spacing={3} justify="center">
 
                 <Grid item component={Card} cx={12} md={3} className={cx(styles.card, styles.infected)}>
